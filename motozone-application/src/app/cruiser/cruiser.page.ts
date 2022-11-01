@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-cruiser',
   templateUrl: './cruiser.page.html',
@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CruiserPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
+  back(){
+    this.router.navigate(['dashboard']);
+  }
 
+  harley(){
+    this.router.navigate(['harley']);
+  }
+  ducati(){
+    this.router.navigate(['ducati']);
+  }
+  motorstar(){
+    this.router.navigate(['motorstar']);
+  }
+  vulcan(){
+    this.router.navigate(['vulcan']);
+  }
 }

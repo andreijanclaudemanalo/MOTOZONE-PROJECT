@@ -76,6 +76,22 @@ const routes: Routes = [
     path: 'aerox',
     loadChildren: () => import('./scooter-item/aerox/aerox.module').then( m => m.AeroxPageModule)
   },
+  {
+    path: 'harley',
+    loadChildren: () => import('./cruiser-item/harley/harley.module').then( m => m.HarleyPageModule)
+  },
+  {
+    path: 'ducati',
+    loadChildren: () => import('./cruiser-item/ducati/ducati.module').then( m => m.DucatiPageModule)
+  },
+  {
+    path: 'vulcan',
+    loadChildren: () => import('./cruiser-item/vulcan/vulcan.module').then( m => m.VulcanPageModule)
+  },
+  {
+    path: 'motorstar',
+    loadChildren: () => import('./cruiser-item/motorstar/motorstar.module').then( m => m.MotorstarPageModule)
+  },
 
 ];
 

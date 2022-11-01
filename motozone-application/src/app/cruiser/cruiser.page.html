@@ -1,9 +1,54 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>cruiser</ion-title>
+      <ion-buttons (click)="back()" slot="start"><ion-img class="back-btn" src="assets/backbutton.png"></ion-img></ion-buttons> 
+      <ion-title style="text-align: center;">CRUISER</ion-title>    
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="no-scroll">
 
+  <div>
+    <br>
+    <br>
+    <br>
+<br>
+    <div name= cruiser>
+      <ion-grid>
+        <center>
+        <ion-row>
+          <ion-col col-12 col-sm>
+            <div class="img-container">
+              <ion-buttons (click)="harley()"><img src="assets/harley.jpg" alt=""class="center"></ion-buttons><br>
+              <ion-label>HARLEY DAVIDSON</ion-label>
+            </div>
+            
+          </ion-col>
+          <ion-col>
+            <div class="img-container">
+              <ion-buttons (click)="ducati()"><img src="assets/ducati.png" alt="" class="center"></ion-buttons><br>
+            <ion-label>DUCATI</ion-label>
+            </div>
+            
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="img-container">
+              <ion-buttons (click)="motorstar()"><img src="assets/motorstar.jpg" alt="" class="center"></ion-buttons><br>
+              <ion-label>MOTORSTAR CAFE</ion-label>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="img-container">
+              <ion-buttons (click)="vulcan()"><img src="assets/vulcan.jpg" alt="" class="center"></ion-buttons><br>
+              <ion-label>KAWASAKI VULCAN</ion-label>
+            </div>
+          </ion-col>
+        </ion-row>
+       
+        </center>
+      </ion-grid>
+    </div>
+  </div>
 </ion-content>
+
