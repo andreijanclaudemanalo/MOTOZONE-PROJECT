@@ -1,5 +1,5 @@
 ion-content{
-    --background: linear-gradient( rgba(85, 172, 182, 0.704), rgb(128, 79, 61));
+    --background: linear-gradient(#5f7390, #457f94, #3d8988, #578f70, #7f905a);
     --opacity:1;
 }
 ion-toolbar{
@@ -72,7 +72,7 @@ ion-label{
     color:rgb(0, 0, 0)
 }
 .banner{
-    --background: linear-gradient( rgba(85, 172, 182, 0.704), rgb(128, 79, 61));
+    --background: linear-gradient( #3b0a03, #441c25, #472f3c, #4a424b, #535353);
    text-align: center;
    font-family: Arial, Helvetica, sans-serif;
 }
