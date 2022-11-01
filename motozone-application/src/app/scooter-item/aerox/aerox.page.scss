@@ -1,0 +1,50 @@
+ion-content{
+    --background: linear-gradient( rgba(85, 172, 182, 0.704), rgb(128, 79, 61));
+    --opacity:1;
+}
+
+ion-button{
+    display: block;
+    font-family: Century Gothic;
+    font-size: 15px;
+    width: 30%;
+    margin: auto;
+    border: 3px;
+}
+
+ion-toolbar{
+    --background:#000000;
+    color: white;
+    border: 0px;
+}
+p{
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 18px;
+}
+ion-title{
+    font-family: century gothic;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.back-btn{
+    width: 30px;
+    height: 30px;
+}
+.close{
+    width: 27px;
+    height: 27px;
+}
+
+.modal-body{
+    --background: linear-gradient( rgba(85, 172, 182, 0.704), rgb(128, 79, 61));
+   
+}
+.banner{
+    --background: linear-gradient( rgba(85, 172, 182, 0.704), rgb(128, 79, 61));
+   
+}
+ion-card{
+    align-self: center;
+}

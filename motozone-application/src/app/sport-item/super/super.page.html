@@ -1,0 +1,60 @@
+<style>
+  ion-modal {
+    --height: 50%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    width: 100%;
+    max-width: 700px; 
+  }
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+
+  ion-modal ion-toolbar {
+    --background: linear-gradient( rgba(85, 172, 182, 0.704), rgb(128, 79, 61));
+    --color: white;
+  }
+</style>
+
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons (click)="back()" slot="start"><ion-img class="back-btn" src="assets/backbutton.png"></ion-img></ion-buttons> 
+      <ion-title style="text-align: center;">SUPERBIKES</ion-title>    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="banner">
+    <p text-align="center">Brands
+    </p>
+  </ion-card>
+  <ion-list *ngFor="let s of sr">
+    <ion-item button  id="{{s.id}}">{{s.name}}</ion-item>
+
+  <ion-modal #modal trigger="{{s.id}}">
+    <ng-template>
+      <ion-content class="modal-body">
+        <ion-toolbar>
+          <ion-title align="left">{{s.name}}</ion-title>
+          <ion-buttons slot="end" color="light" (click)="modal.dismiss()"><ion-img  class="close" src="assets/cancel.png"></ion-img></ion-buttons>
+        </ion-toolbar>
+        <ion-card align="center">
+          <ion-card-header>
+            <ion-card-subtitle>Superbike</ion-card-subtitle>
+            <ion-card-title>{{s.name}}</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-label id="label">Frame: </ion-label><ion-label>{{s.Frame}}</ion-label><br>
+            <ion-label id="label">Wheels: </ion-label><ion-label>{{s.Wheels}}</ion-label><br>
+            <ion-label id="label">Weight: </ion-label><ion-label>{{s.Weight}}</ion-label><br>
+            <ion-label id="label">Size: </ion-label><ion-label>{{s.Size}}</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-list>
+</ion-content>
+

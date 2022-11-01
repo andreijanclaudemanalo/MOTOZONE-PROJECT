@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-sport',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SportPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+  back(){
+    this.router.navigate(['dashboard']);
+  }
+
+  light(){
+    this.router.navigate(['light']);
+  }
+  middle(){
+    this.router.navigate(['middle']);
+  }
+  super(){
+    this.router.navigate(['super']);
   }
 
 }

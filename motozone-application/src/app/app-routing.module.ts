@@ -48,6 +48,34 @@ const routes: Routes = [
     path: 'motocross',
     loadChildren: () => import('./dirt-item/motocross/motocross.module').then( m => m.MotocrossPageModule)
   },
+  {
+    path: 'light',
+    loadChildren: () => import('./sport-item/light/light.module').then( m => m.LightPageModule)
+  },
+  {
+    path: 'middle',
+    loadChildren: () => import('./sport-item/middle/middle.module').then( m => m.MiddlePageModule)
+  },
+  {
+    path: 'super',
+    loadChildren: () => import('./sport-item/super/super.module').then( m => m.SuperPageModule)
+  },
+  {
+    path: 'mio',
+    loadChildren: () => import('./scooter-item/mio/mio.module').then( m => m.MioPageModule)
+  },
+  {
+    path: 'nmax',
+    loadChildren: () => import('./scooter-item/nmax/nmax.module').then( m => m.NmaxPageModule)
+  },
+  {
+    path: 'pcx',
+    loadChildren: () => import('./scooter-item/pcx/pcx.module').then( m => m.PcxPageModule)
+  },
+  {
+    path: 'aerox',
+    loadChildren: () => import('./scooter-item/aerox/aerox.module').then( m => m.AeroxPageModule)
+  },
 
 ];
 
