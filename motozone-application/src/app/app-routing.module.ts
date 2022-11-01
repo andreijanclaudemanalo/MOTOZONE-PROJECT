@@ -4,12 +4,37 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'loader',
     pathMatch: 'full'
   },
+
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'loader',
+    loadChildren: () => import('./loader/loader.module').then( m => m.LoaderPageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'dirt',
+    loadChildren: () => import('./dirt/dirt.module').then( m => m.DirtPageModule)
+  },
+  {
+    path: 'sport',
+    loadChildren: () => import('./sport/sport.module').then( m => m.SportPageModule)
+  },
+  {
+    path: 'cruiser',
+    loadChildren: () => import('./cruiser/cruiser.module').then( m => m.CruiserPageModule)
+  },
+  {
+    path: 'scooter',
+    loadChildren: () => import('./scooter/scooter.module').then( m => m.ScooterPageModule)
+  },
+  {
+    path: 'dirt-item',
+    loadChildren: () => import('./dirt-item/dirt-item.module').then( m => m.DirtItemPageModule)
   }
 ];
 
