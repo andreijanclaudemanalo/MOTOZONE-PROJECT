@@ -20,7 +20,7 @@
 <ion-header>
   <ion-toolbar>
       <ion-buttons (click)="back()" slot="start"><ion-img class="back-btn" src="assets/backbutton.png"></ion-img></ion-buttons> 
-      <ion-title style="text-align: center;">ENDURO</ion-title>    
+      <ion-title style="text-align: center;">CHILD DIRT BIKE</ion-title>    
   </ion-toolbar>
 </ion-header>
 
@@ -29,27 +29,27 @@
     <p text-align="center">Brands
     </p>
   </ion-card>
-  <ion-list *ngFor="let e of en">
-    <ion-item button  id="{{e.id}}">{{e.name}}</ion-item>
+  <ion-list *ngFor="let c of ch">
+    <ion-item button  id="{{c.id}}">{{c.name}}</ion-item>
 
-  <ion-modal #modal trigger="{{e.id}}">
+  <ion-modal #modal trigger="{{c.id}}">
     <ng-template>
       <ion-content class="modal-body">
         <ion-toolbar>
-          <ion-title align="left">{{e.name}}</ion-title>
+          <ion-title align="left">{{c.name}}</ion-title>
           <ion-buttons slot="end" color="light" (click)="modal.dismiss()"><ion-img  class="close" src="assets/cancel.png"></ion-img></ion-buttons>
         </ion-toolbar>
         <ion-card align="center">
           <ion-card-header>
-            <ion-card-subtitle>Enduro</ion-card-subtitle>
-            <ion-card-title>{{e.name}}</ion-card-title>
+            <ion-card-subtitle>Child Dirt</ion-card-subtitle>
+            <ion-card-title>{{c.name}}</ion-card-title>
           </ion-card-header>
         
           <ion-card-content>
-            <ion-label id="label">Frame: </ion-label><ion-label>{{e.Frame}}</ion-label><br>
-            <ion-label id="label">Wheels: </ion-label><ion-label>{{e.Wheels}}</ion-label><br>
-            <ion-label id="label">Weight: </ion-label><ion-label>{{e.Weight}}</ion-label><br>
-            <ion-label id="label">Size: </ion-label><ion-label>{{e.Size}}</ion-label>
+            <ion-label id="label">Frame: </ion-label><ion-label>{{c.Frame}}</ion-label><br>
+            <ion-label id="label">Wheels: </ion-label><ion-label>{{c.Wheels}}</ion-label><br>
+            <ion-label id="label">Weight: </ion-label><ion-label>{{c.Weight}}</ion-label><br>
+            <ion-label id="label">Size: </ion-label><ion-label>{{c.Size}}</ion-label>
           </ion-card-content>
         </ion-card>
       </ion-content>

@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { DirtItemPageRoutingModule } from './dirt-item-routing.module';
+import { TrailPageRoutingModule } from './trail-routing.module';
 
-import { DirtItemPage } from './dirt-item.page';
+import { TrailPage } from './trail.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DirtItemPageRoutingModule
+    TrailPageRoutingModule
   ],
-  declarations: [DirtItemPage]
+  declarations: [TrailPage]
 })
-export class DirtItemPageModule {}
+export class TrailPageModule {}

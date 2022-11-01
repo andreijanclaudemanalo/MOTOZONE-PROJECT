@@ -15,16 +15,16 @@ export class DirtPage implements OnInit {
     this.router.navigate(['dashboard']);
   }
 
-  down(){
-    this.router.navigate(['downhill']);
-  }
-  cross(){
-    this.router.navigate(['cross']);
-  }
   enduro(){
     this.router.navigate(['enduro']);
   }
-  fat(){
-    this.router.navigate(['fatbike']);
+  trail(){
+    this.router.navigate(['trail']);
+  }
+  motocross(){
+    this.router.navigate(['motocross']);
+  }
+  child(){
+    this.router.navigate(['child']);
   }
 }

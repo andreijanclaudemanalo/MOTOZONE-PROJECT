@@ -33,9 +33,22 @@ const routes: Routes = [
     loadChildren: () => import('./scooter/scooter.module').then( m => m.ScooterPageModule)
   },
   {
-    path: 'dirt-item',
-    loadChildren: () => import('./dirt-item/dirt-item.module').then( m => m.DirtItemPageModule)
-  }
+    path: 'enduro',
+    loadChildren: () => import('./dirt-item/enduro/enduro.module').then( m => m.EnduroPageModule)
+  },
+  {
+    path: 'child',
+    loadChildren: () => import('./dirt-item/child/child.module').then( m => m.ChildPageModule)
+  },
+  {
+    path: 'trail',
+    loadChildren: () => import('./dirt-item/trail/trail.module').then( m => m.TrailPageModule)
+  },
+  {
+    path: 'motocross',
+    loadChildren: () => import('./dirt-item/motocross/motocross.module').then( m => m.MotocrossPageModule)
+  },
+
 ];
 
 @NgModule({
