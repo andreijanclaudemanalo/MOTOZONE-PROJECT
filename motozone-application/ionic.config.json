@@ -1,0 +1,7 @@
+{
+  "name": "motozone application",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
